@@ -1,18 +1,22 @@
 <!DOCTYPE html>
 <html lang="pt-br">
     <meta charset="UTF-8">
+    <link rel="shortcut icon" type="imagemx/png" href="./imagens/plantavszumbi.jpg">
+    <link rel="stylesheet" href="estilo.css"
     <head>
+        <title>Lista de tarefa</title>
         <div style="text-align: center;">
             <h1> LISTA DE TAREFAS</h1>
         </div>
-        
     </head>
     <body>
         <div style="text-align: center;">
-        <p> Teste para paragrafo</p>
-        <input type="text" placeholder="INSIRA UMA TAREFA...">
-        <button onclick="adicionarTarefa()">Adicionar</button>
-        <script src="script.js"></script>
+            <input type="text" placeholder="ADICIONE UMA TAREFA..." id="entradaTarefa">
+            <button onclick="adicionarTarefa()">adicionar</button>
+            <div style="padding-top: 5px;">
+                <ul id="listaTarefas"></ul>
+            </div>
         </div>
+        <script src="script.js"></script>
     </body>
 </html>
